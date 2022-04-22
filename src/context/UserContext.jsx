@@ -19,7 +19,6 @@ export const UserProvider = ({ children }) => {
   const [errors, setErrors] = useState({});
 
   const handleChange = ({ target: { name, value } }) => {
-    console.log(userData);
     setUserData({
       ...userData,
       [name]: value,
