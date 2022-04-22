@@ -26,6 +26,7 @@ const PaymentForm = () => {
               errors.cardName || 'Escribir tal cual aparece en la tarjeta'
             }
             onChange={handleChange}
+            inputProps={{ maxLength: 50 }}
           />
         </Grid>
         <Grid item xs={12}>
@@ -71,6 +72,7 @@ const PaymentForm = () => {
               errors.cardCvv || 'Últimos tres dígitos sobre la tira de firma'
             }
             onChange={handleChange}
+            inputProps={{ maxLength: 3 }}
           />
         </Grid>
       </Grid>

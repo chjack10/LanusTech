@@ -65,7 +65,7 @@ const SearchBar = () => {
       </SearchIconWrapper>
       <StyledInputBase
         placeholder='Buscar...'
-        inputProps={{ 'aria-label': 'buscar' }}
+        inputProps={{ 'aria-label': 'buscar', maxLength: 50 }}
         onChange={debouncedSearchHandler}
       />
     </Search>
